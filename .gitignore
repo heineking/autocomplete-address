@@ -1,0 +1,10 @@
+node_modules/
+downloads/
+data/
+dist/
+tmp/
+jmeter/
+tsconfig.tsbuildinfo
+*.db*
+*.csv
+addresses.csv
