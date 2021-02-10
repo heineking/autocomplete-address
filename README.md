@@ -6,22 +6,26 @@
 
 ## Problem Domain
 
-All e-commerce companys need to collect a customer's address to complete
+All e-commerce companies need to collect a customer's address to complete
 a sale. The conventional wisdom is that conversion rates will improve when
-friction is reduced.
+friction is reduced. In this project, friction is defined as how easy it
+is for a customer to complete a checkout process and purchase goods.
 
 Reducing friction is usually achieved by eliminating as many form fields
 as possible. This approach works for the majority of uses but not all.
-Eliminating too many fields can exclude certain users and reduce quality
-of information collected.
+There can be some issues where removing too many fields will reduce the
+quality of informaiton collected.
 
-I initially thought that the address field could be collapsed into one
-field. I think that address quality would go down which would affect
-our ability to deliver the product to the customer.
+One way to reduce friction in a checkout flow would be to collapse
+all address inputs into a single field. I initially thought that this
+could be a good way to reduce friction but decided against it because
+the quality of the address collected.
 
-Providing an autocomplete driving by a backend database of addresses
-could reduce friction by autocompleting the address for the user. This
-also increases the quality of addresses being submitted by the user.
+We are unable to reduce the number of fields so the next best thing
+would be to reduce the amount of typing that customer has to do to
+complete the address. One way to do this would be by providing an
+auto-complete service. This would reduce friction and increase the
+quality of the informaiton collection.
 
 This project is motivated by this conjecture. I will explore the
 differences between implementing a solution powered by a SQL database
